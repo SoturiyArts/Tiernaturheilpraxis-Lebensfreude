@@ -1,0 +1,27 @@
+/*
+	Stylesheet - Tiernaturheilpraxis-Lebensfreude
+	STYLES
+	VERSION 1.0
+*/
+
+/* Globale */
+body{
+	margin: 0 auto;
+	position: relative;
+	background: #FDE3A7; /* Alternative Colors: #A2DED0 #FDE3A7 #C8F7C5*/
+}
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hidden{
+    position: absolute;
+    width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+    height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;    
+}
