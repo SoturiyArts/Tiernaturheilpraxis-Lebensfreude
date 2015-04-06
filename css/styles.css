@@ -9,6 +9,7 @@ body{
 	margin: 0 auto;
 	position: relative;
 	background: #FDE3A7; /* Alternative Colors: #A2DED0 #FDE3A7 #C8F7C5*/
+	font-family: 'Open Sans', sans-serif;
 }
 *, *:before, *:after{
     -webkit-box-sizing: border-box;
@@ -24,4 +25,79 @@ body{
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;    
+}
+
+/* Navbar */
+.site_navbar{
+	background: white;
+	position: relative;
+	min-height: 40px;
+}
+.site_navbar h1{
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding: 0.5em;
+	position: absolute;
+	top: 50%;
+    left:1%;
+    transform: translate(0, -50%);
+}
+.site_navbar nav ul{
+	float: right;
+	position: absolute;
+	top: 50%;
+    right:1%;
+    transform: translate(0, -50%);
+}
+.site_navbar nav ul li{
+	float: left;
+	list-style: none;
+	margin-left: 1em;
+	padding: 0.5em;
+}
+.site_navbar nav ul li a{
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.tinynav{
+	display: none;
+}
+
+@media screen and (min-width: 850px){
+	.site_navbar h1{
+		position: absolute;
+	    width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+	    height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+	    padding: 0;
+	    margin: -1px;
+	    border: 0;
+	    clip: rect(0 0 0 0);
+	    overflow: hidden;   
+	}
+	.site_navbar nav ul{
+		float: left;
+		position: absolute;
+		top: 50%;
+    	left:1%;
+    	transform: translate(0, -50%);
+	}
+	.tinynav{
+		display: none;
+	}
+	#nav{
+		display: block;
+	}
+}
+@media screen and (max-width: 850px){
+	.tinynav{
+		display: block;
+		float: right;
+	}
+	#nav{
+		display: none;
+	}
 }
